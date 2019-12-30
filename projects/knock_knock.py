@@ -12,7 +12,6 @@ def main():
 
     def on_user_intent(robot, event_type, event, done):
         user_intent = UserIntent(event)
-        print(f"{user_intent}")
         if user_intent.intent_event is UserIntentEvent.knowledge_question:
             print(f"Received {user_intent.intent_event}")
             print(user_intent.intent_data)
